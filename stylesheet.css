@@ -1,0 +1,41 @@
+img {
+	width: 50%;
+}
+ul{
+	list-style-type: : none;
+	overflow: hidden;
+	padding: 0px ;
+	margin: 0px;
+	background-color: black;
+	color: white;
+
+}
+li{
+	display: inline-block;
+	padding: 15px; 
+	margin: 0px;
+}
+li:hover{
+	background-color:grey;
+}
+#right{
+	float: right;
+}
+#link{
+	text-decoration: none;
+	color: white;
+}
+table{
+	table-layout: right;
+	margin: 50px;
+	margin-left: 200px;
+	border-collapse: collapse;
+	border: 3px solid;
+}
+th, td{
+	border: 2px solid;
+	padding: 10px;
+}
+th{
+	background-color: lightgrey;
+}
