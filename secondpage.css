@@ -1,0 +1,55 @@
+*{
+			box-sizing: border-box;
+		}
+		.column{
+		float:left;
+		width: 50%;
+		height: 300px;
+	}
+	.row:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+	.left{
+		border: 1px solid;
+		height: 150px;
+		padding: 15px;
+	}
+	#aside{
+		background-color: lightgrey;
+		border: 1px solid ;
+		padding: 15px;
+	}
+	.header, .nav, .footer{
+		border: 1px solid;
+		height: 100px;
+		background-color: lightgrey;
+		padding: 15px;
+	}
+	div > h1{
+		text-align: center;
+	}
+	.nav {
+		background-color: #333;
+		color: white;
+		height: 50px;
+		padding:0px;
+	}
+	.nav > ul{
+		overflow: hidden;
+		padding: 0px ;
+		margin: 0px;
+	}
+	.nav > ul > li{
+		display: inline-block;
+		padding: 15px; 
+		margin: 0px;
+	}
+	.nav > ul > li:hover{
+		background-color: black;
+			}
+ .nav > ul > li > a{
+	text-decoration: none;
+	color: white;
+}
