@@ -1,9 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>First page</title>
+	<style type="text/css">
+		@media only screen and (max-width: 900px) {
+	  li{
+	 	float: none;
+	 	width: 100%;
+	}
+}
+		a{
+			text-decoration: none;
+			color: white;        }
+		ul {
+			list-style: none;
+			background-color: lightblue; 
+			padding: 0px;
+			margin: 0px;
+		}
+		li{
+			display: inline-block;
+			padding: 15px;
+		}
+		li:hover{
+			background-color:blue; 
+		}
+
+	</style>
 </head>
 <body>
-
+	<div>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="first-page.html">First Page</a></li>
+			<li><a href="second-page.html">Second Page</a></li>
+			<li><a href="third-page.html">Third Page</a></li>
+		</ul>
+	</div>
 </body>
 </html>

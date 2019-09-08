@@ -67,3 +67,12 @@ div{
 #right{
 	float: right;
 }
+    @media only screen and (max-width: 1000px) {
+	 .nav > ul > li{
+	 	float: none;
+	 	width: 100%;
+	}
+	.nav {
+		height: 200px;
+	} 
+}
