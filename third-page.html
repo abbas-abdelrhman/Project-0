@@ -1,9 +1,65 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Third page</title>
+	<style type="text/css">	
+		*{
+			box-sizing: border-box;
+		}	
+		#nav {
+			width: 20%;
+			margin-right: 15px;
+			margin: 0px;
+
+		}	
+		ul {
+			list-style: none;
+			padding: 0px;
+			margin: 0px;
+			background-color:pink;
+			list-style-position: vertical;
+			height: 100%;
+			position: fixed;
+			width: 20%
+		}	
+
+
+		li {
+			padding: 15px;
+			display: block;
+		}
+		a {
+			text-decoration: none;
+			color: white;
+		}
+		li:hover{background-color:lightblue; }
+		.row:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+	.column{
+		float:left;
+		width: 50%;
+		height: 300px;
+	}
+	</style>
 </head>
 <body>
-
+	<div class="row">
+		<div id="nav" class="column">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="first-page.html">First Page</a></li>
+				<li><a href="second-page.html">Second Page</a></li>
+				<li><a href="third-page.html">Third Page</a></li>
+				<li><a href="fourth-page.html">Fourth Page</a></li>
+			</ul>
+		</div>
+		<div class="column" style="border: 1px solid;margin:0px;padding: 50px; width: 80%; height:100%; background-color:tomato;">
+			<h1 style="text-align: center;">The Heading.</h1>
+			
+		</div>
+	</div>
 </body>
 </html>

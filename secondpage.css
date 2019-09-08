@@ -1,5 +1,6 @@
 *{
 			box-sizing: border-box;
+			margin: 0px;
 		}
 		.column{
 		float:left;
@@ -21,7 +22,7 @@
 		border: 1px solid ;
 		padding: 15px;
 	}
-	.header, .nav, .footer{
+	 .nav, .footer{
 		border: 1px solid;
 		height: 100px;
 		background-color: lightgrey;
@@ -35,6 +36,7 @@
 		color: white;
 		height: 50px;
 		padding:0px;
+		margin: 0px;
 	}
 	.nav > ul{
 		overflow: hidden;
@@ -52,4 +54,13 @@
  .nav > ul > li > a{
 	text-decoration: none;
 	color: white;
+}
+img{
+	height: 350px;
+	width: 100%;
+	margin: 0px;
+
+}
+div{
+	margin: 0px;
 }
