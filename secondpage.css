@@ -64,3 +64,6 @@ img{
 div{
 	margin: 0px;
 }
+#right{
+	float: right;
+}

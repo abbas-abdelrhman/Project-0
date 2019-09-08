@@ -21,6 +21,9 @@ li{
 li:hover{
 	background-color:grey;
 }
+#right{
+	float: right;
+}
 
 div > ul > li > a ,#link{
 	text-decoration: none;
