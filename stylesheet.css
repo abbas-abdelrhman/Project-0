@@ -21,15 +21,12 @@ li{
 li:hover{
 	background-color:grey;
 }
-#right{
-	float: right;
-}
+
 div > ul > li > a ,#link{
 	text-decoration: none;
 	color: white;
 }
 table{
-	table-layout: right;
 	margin: 50px;
 	margin-left: 200px;
 	border-collapse: collapse;
