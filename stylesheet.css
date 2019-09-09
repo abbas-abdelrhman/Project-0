@@ -1,9 +1,15 @@
+:root {
+  --main-bg-color: tomato;
+  --main-txt-color: black;  
+  --main-padding: 15px;  
 }
 body{
 	box-sizing: border-box;
+	margin: 0px;
 }
 img {
-	width: 50%;
+	width: 100%;
+	height: 500px;
 }
 ul{
 	list-style-type: : none;
@@ -11,7 +17,6 @@ ul{
 	padding: 0px ;
 	margin: 0px;
 	background-color: black;
-	color: white;
 
 }
 li{
@@ -42,6 +47,25 @@ th, td{
 }
 th{
 	background-color: lightgrey;
+}
+#div {
+  color: var(--main-txt-color);  
+  padding: var(--main-padding);
+}
+
+#h3 {
+  background-color: var(--main-bg-color);
+  color: var(--main-txt-color);
+  padding: var(--main-padding);
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#p {
+  background-color: var(--main-bg-color);
+  color: var(--main-txt-color);
+  padding: var(--main-padding);
+  font-size: 15px;
 }
 @media only screen and (max-width: 960px){
 	li{
