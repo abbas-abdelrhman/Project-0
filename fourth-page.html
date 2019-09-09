@@ -1,41 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>First page</title>
+	<title>Contect Us</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
 	<style type="text/css">
-		@media only screen and (max-width: 900px) {
-	  li{
+@media only screen and (max-width: 900px) {
+	  nav{
 	 	float: none;
 	 	width: 100%;
 	}
 }
-		a{
-			text-decoration: none;
-			color: white;        }
-		ul {
-			list-style: none;
-			background-color: lightblue; 
-			padding: 0px;
-			margin: 0px;
-		}
-		li{
-			display: inline-block;
-			padding: 15px;
-		}
-		li:hover{
-			background-color:blue; 
-		}
-
 	</style>
 </head>
 <body>
-	<div>
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="first-page.html">First Page</a></li>
-			<li><a href="second-page.html">Second Page</a></li>
-			<li><a href="third-page.html">Third Page</a></li>
-		</ul>
-	</div>
+
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div>
+			<div class="navbar-nav">
+				<a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+				<a class="nav-item nav-link" href="first-page.html">First Page</a>
+				<a class="nav-item nav-link" href="second-page.html">Second Page</a>
+				<a class="nav-item nav-link" href="third-page.html">Third Page</a>
+			</div>
+		</div>
+	</nav>
+
+	<form>
+		<div class="form-group">
+	    	<label for="exampleInputEmail1">Email address</label>
+		    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+		    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+		</div>
+		<div class="form-group">
+		    <label for="exampleInputPassword1">Password</label>
+		    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+		</div>
+	  	<div class="form-group form-check">
+    		<input type="checkbox" class="form-check-input" id="exampleCheck1">
+		    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+		</div>
+	  		<button type="submit" class="btn btn-primary">Submit</button>
+	</form>
 </body>
 </html>
