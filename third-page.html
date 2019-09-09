@@ -2,29 +2,29 @@
 <html>
 <head>
 	<title>Third page</title>
-	<style type="text/css">	
+	<meta charset="utf-8">
+	<style>	
 		*{
 			box-sizing: border-box;
+			margin: 0px;
 		}	
 		#nav {
-			width: 20%;
-			margin-right: 15px;
+			width: 13%;
+			margin-right: 0px;
 			margin: 0px;
 
 		}	
-		ul {
+		.ul {
 			list-style: none;
 			padding: 0px;
-			margin: 0px;
 			background-color:pink;
-			list-style-position: vertical;
 			height: 100%;
 			position: fixed;
-			width: 20%
+			width: 13%;
 		}	
 
 
-		li {
+		.li {
 			padding: 15px;
 			display: block;
 		}
@@ -32,32 +32,62 @@
 			text-decoration: none;
 			color: white;
 		}
-		li:hover{background-color:lightblue; }
-		.row:after {
-		content: "";
-		display: table;
-		clear: both;
+
+		.li:hover {
+		background-color:lightblue; }
+
+	.container{
+		display: flex;
 	}
-	.column{
-		float:left;
-		width: 50%;
-		height: 300px;
-	}
+	
 	</style>
 </head>
 <body>
-	<div class="row">
+	<div class="container">
 		<div id="nav" class="column">
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="first-page.html">First Page</a></li>
-				<li><a href="second-page.html">Second Page</a></li>
-				<li><a href="third-page.html">Third Page</a></li>
-				<li><a href="fourth-page.html">Fourth Page</a></li>
+			<ul class="ul">
+				<li class="li"><a href="index.html">Home</a></li>
+				<li class="li"><a href="first-page.html">First Page</a></li>
+				<li class="li"><a href="second-page.html">Second Page</a></li>
+				<li class="li"><a href="fourth-page.html">Contact Us</a></li>
 			</ul>
 		</div>
-		<div class="column" style="border: 1px solid;margin:0px;padding: 50px; width: 80%; height:100%; background-color:tomato;">
-			<h1 style="text-align: center;">The Heading.</h1>
+		<div class="column" style="width: 100%; margin: 0px;">
+			<h1 style="text-align: center;margin-top: 15px; margin-bottom: 10%;">Shopping List</h1>
+			<div class="container">
+				<div class="column" style="margin: 10px; width: 50%;margin-left:25%;">
+					<ol>
+						<li>Aubergine</li>
+						<li>Artichok</li>
+						<li>Bean Sprouts</li>
+						<li>Green Beans</li>
+						<li>Lentils</li>
+						<li>Peas</li>
+						<li>Oranges</li>
+						<li>Grapefruit</li>
+						<li>Nectarine</li>
+						<li>Peach</li>
+						<li>Plums</li>
+						<li>Bananas</li>
+					</ol>
+				</div>
+				<div style="margin: 10px; width: 50%;">
+					<ol start="13">
+						<li>Milk</li>
+						<li>Ice Cream</li>
+						<li>Butter</li>
+						<li>Cheese</li>
+						<li>Meat</li>
+						<li>Fish</li>
+						<li>Chicken</li>
+						<li>Eggs</li>
+						<li>Jam</li>
+						<li>Honey</li>
+						<li>Rice</li>
+						<li>Pasta</li>
+					</ol>
+				</div>
+			</div>
 			
 		</div>
 	</div>
