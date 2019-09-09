@@ -1,78 +1,116 @@
 *{
-			box-sizing: border-box;
-			margin: 0px;
-		}
-		.column{
-		float:left;
-		width: 50%;
-		height: 300px;
-	}
-	.row:after {
-		content: "";
-		display: table;
-		clear: both;
-	}
-	.left{
-		border: 1px solid;
-		height: 150px;
-		padding: 15px;
-	}
-	#aside{
-		background-color: lightgrey;
-		border: 1px solid ;
-		padding: 15px;
-	}
-	 .nav, .footer{
-		border: 1px solid;
-		height: 100px;
-		background-color: lightgrey;
-		padding: 15px;
-	}
-	div > h1{
-		text-align: center;
-	}
-	.nav {
-		background-color: #333;
-		color: white;
-		height: 50px;
-		padding:0px;
+		box-sizing: border-box;
 		margin: 0px;
 	}
-	.nav > ul{
-		overflow: hidden;
-		padding: 0px ;
-		margin: 0px;
-	}
-	.nav > ul > li{
-		display: inline-block;
-		padding: 15px; 
-		margin: 0px;
-	}
-	.nav > ul > li:hover{
-		background-color: black;
-			}
- .nav > ul > li > a{
-	text-decoration: none;
+.col {
+	margin: 0px;
+}
+.container{
+	display:flex;
+}
+#left-page{
+	width: 20%;
+}
+.row{
+	margin:0px;
+	background-color: red;
+	width: 100%;
+	height: 800px;
+	padding: 5px;
+	text-align: center;
+}
+#content{
+	width: 60%;
+	background-color: tomato;
+	padding: 5px;
+	margin-left: 5px;
+	text-align: center;
+	border: 4px solid black;
+}
+#content > h1{
+	border: inherit;
+	margin-top: 10px;
+}
+#aside{
+	background-color: lightblue;
+	padding: 5px;
+	margin-left: 5px;
+	text-align: center;
+	width: 20%;
+	border: 4px dashed black;
+	margin-top: 5px;
+}
+#aside > h1{
+	border: inherit;
+	margin-top: inherit;
+}
+#section{
+	background-color: pink;
+	margin-bottom: 5px;
+	border: 4px dotted black;
+	margin-top: 5px;
+}
+#section > h1 {
+	border: inherit;
+	margin: inherit;
+
+}
+#article{
+	background-color:lightgreen;
+}
+.nav, .footer{
+	height: 100px;
+	background-color: lightgrey;
+	padding: 15px;
+}
+div > h1{
+	text-align: center;
+}
+.nav {
+	background-color: #333;
 	color: white;
+	height: 50px;
+	padding:0px;
+	margin: 0px;
+}
+.nav > ul{
+	overflow: hidden;
+	padding: 0px ;
+	margin: 0px;
+}
+.nav > ul > li{
+	display: inline-block;
+	padding: 15px; 
+	margin: 0px;
+}
+.nav > ul > li:hover{
+	background-color: black;
+		}
+.nav > ul > li > a{
+text-decoration: none;
+color: white;
 }
 img{
-	height: 350px;
-	width: 100%;
-	margin: 0px;
+height: 350px;
+width: 100%;
+margin: 0px;
 
 }
 div{
-	margin: 0px;
+margin: 0px;
 }
 #right{
-	float: right;
+float: right;
 }
-    @media only screen and (max-width: 1000px) {
-	 .nav > ul > li{
-	 	float: none;
-	 	width: 100%;
-	}
-	.nav {
-		height: 200px;
-	} 
+.footer{
+	margin-top:5px;
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+
+	.nav > ul > li{ float: none;	width: 100%;                      }
+	.nav { height: auto;             } 
+	body { font-size:auto;  }
 }
