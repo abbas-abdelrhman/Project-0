@@ -1,4 +1,6 @@
 # Project-0
+
+## CS50 Course Assignments
 **The main page (index.html) include:**
 
 	1. Navbar from lists
